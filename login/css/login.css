@@ -1,6 +1,6 @@
 .login{
     display: flex;
-    margin-top: 30vh;
+    margin: 48vh;
     align-items: center;
     justify-content: center;
 }
@@ -203,9 +203,5 @@
     color: var(--font-color);
     cursor: pointer;
   } 
-  @media screen and(max-width:600px) {
-    .login{
-        margin-top: 10vh;
-    }
-    
-  }
+  
+  
