@@ -1,0 +1,10 @@
+.safety{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats{
+    width: 50%;
+}
