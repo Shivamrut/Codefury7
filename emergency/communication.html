@@ -25,23 +25,6 @@
 
     <!-- Template Stylesheet -->
     <link href="css/testimonial.css" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
-    <link rel="stylesheet" href="css/aos.css">
 </head>
 
 <body>
@@ -65,28 +48,83 @@
                         <a href="../donation/donation.html" class="nav-item nav-link">Donation</a>
                         <a href="../testimonials/testimonials.html" class="nav-item nav-link">Testimonials</a>
                         <a href="login.html" class="nav-item nav-link">Login</a>
-
                     </div>
-
                 </div>
                 <a id="share" href="../emergency/communication.html"
-                    class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill ">Emergency</a>
+                    class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Emergency</a>
                 <pre id="result"></pre>
                 <script type="module" src="./emergency/emergency.js"></script>
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-
-
             </nav>
         </div>
     </div>
     <!-- navbar end -->
-    <div id="communication">
 
+    <!-- SOS Confirmation Section -->
+    <div class="container my-5">
+        <div class="alert alert-success text-center" role="alert">
+            Your location has been successfully recorded. Help is on the way!
+        </div>
     </div>
+
+    <!-- SOS Request Form -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card p-4">
+                    <h4 class="text-center mb-4">Request Assistance</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="helpType" class="form-label">Type of Assistance Needed</label>
+                            <select id="helpType" class="form-select">
+                                <option value="medical">Medical Assistance</option>
+                                <option value="rescue">Rescue</option>
+                                <option value="shelter">Shelter</option>
+                                <option value="food">Food and Water</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description of Your Situation</label>
+                            <textarea id="description" class="form-control" rows="4"
+                                placeholder="Provide any important details..."></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Submit Request</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Status Updates -->
+    <div class="container my-5">
+        <h4 class="text-center mb-4">Status of Your Request</h4>
+        <div class="alert alert-info text-center" role="alert">
+            Your request has been received. We are processing it now. You will be notified as soon as help is
+            dispatched.
+        </div>
+    </div>
+
+    <!-- Safety Tips -->
+    <div class="container my-5">
+        <h4 class="text-center mb-4">Safety Tips</h4>
+        <ul class="list-group">
+            <li class="list-group-item">Stay in a safe and secure location until help arrives.</li>
+            <li class="list-group-item">Keep your mobile device charged and within reach.</li>
+            <li class="list-group-item">If possible, avoid areas with potential hazards like downed power lines or
+                flooding.</li>
+            <li class="list-group-item">If you have any medical needs, try to prepare any necessary items like
+                medication or first aid supplies.</li>
+        </ul>
+    </div>
+
     <!-- Footer Start -->
     <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row">
+                <!-- Existing Footer Content -->
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-item">
                         <h1 class="text-primary" style="font-family: Playball !important;">Work<span
@@ -95,17 +133,20 @@
                             tools,
                             and
                             resources needed to prepare for, respond to, and recover from natural disasters.</p>
-
                     </div>
                 </div>
+                <!-- Additional Footer Content -->
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-item">
                         <h4 class="mb-4">Quick Links</h4>
                         <div class="d-flex flex-column align-items-start">
-                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Education</a>
-                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Resources</a>
-                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Donations</a>
-                            <a class="text-body mb-3" href=""><i
+                            <a class="text-body mb-3" href="../education/education.html"><i
+                                    class="fa fa-check text-primary me-2"></i>Education</a>
+                            <a class="text-body mb-3" href="../resources/resources.html"><i
+                                    class="fa fa-check text-primary me-2"></i>Resources</a>
+                            <a class="text-body mb-3" href="../donation/donation.html"><i
+                                    class="fa fa-check text-primary me-2"></i>Donations</a>
+                            <a class="text-body mb-3" href="../testimonials/testimonials.html"><i
                                     class="fa fa-check text-primary me-2"></i>Testimonials</a>
                         </div>
                     </div>
@@ -124,23 +165,32 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-item">
                         <h4 class="mb-4">Emergency</h4>
-                        <a href="./communication.html"
+                        <a href="./emergency/communication.html"
                             class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Click here </a>
+                        <pre id="result"></pre>
+                        <script type="module" src="./emergency/emergency.js"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
                         <p class="lh-lg mb-4"> This button connects you directly to emergency services. Press and hold
-                            for
-                            immediate
+                            for immediate
                             assistance. Your safety is our priority.
                         </p>
-
-                        <script type="module" src="./emergency.js"></script>
-                        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Footer End -->
+
+    <!-- Libraries JS -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
 </body>
 
 </html>
