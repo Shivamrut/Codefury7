@@ -24,11 +24,42 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="css/style.css">
+   
+    <link href="../home/home.css" rel="stylesheet">
+  
 </head>
 
 <body>
-
+    <div class="container-fluid nav-bar">
+        <div class="container">
+            <nav class="navbar navbar-light navbar-expand-lg py-4">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="text-primary fw-bold mb-0" style="font-family: Playball !important;font-size: 6vh;">Work<span class="text-dark">aholics</span> </h1>
+                </a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto" >
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="./education/education.html" class="nav-item nav-link">Education</a>
+                        <a href="./resources/resources.html" class="nav-item nav-link">Resources</a>
+                        <a href="./donation/donation.html" class="nav-item nav-link">Donation</a>
+                        <a href="./testimonials/testimonials.html" class="nav-item nav-link">Testimonials</a>
+                        <a href="./login.html" class="nav-item nav-link">Login</a>
+                        
+                        </div>
+                        
+                    </div>
+                    <a id="share" href="emergency/communication.html" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill " >Emergency</a>
+                    <pre id="result"></pre>
+                    <script type="module" src="emergency/emergency.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+                   
+                   </div>
+            </nav>
+        </div>
 
     <!--? Slider Area Start -->
     <section class="slider-area">
@@ -495,9 +526,49 @@
     <!-- About Area End -->
     </main>
 
-    <!-- Scroll Up -->
-    <div id="back-top">
-        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s" style="padding: 100px 0px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h1 class="text-primary" style="font-family: Playball !important;font-size: 6vh;">Work<span class="text-dark">aholics</span></h1>
+                        <p class="lh-lg mb-4">Our mission is to empower individuals and communities with the knowledge, tools, and resources needed to prepare for, respond to, and recover from natural disasters.</p>
+                       
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4  style="color: black;font-size: 3.5vh;font-weight: 900;" class="mb-4">Quick Links</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Education</a>
+                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Resources</a>
+                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Donations</a>
+                            <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Testimonials</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4  style="color: black;font-size: 3.5vh;font-weight: 900;" class="mb-4">Contact Us</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i> UVCE</p>
+                            <p><i class="fa fa-phone-alt text-primary me-2"></i> +91 xxxxx xxxxx</p>
+                            <p><i class="fas fa-envelope text-primary me-2"></i> info@workaholics.com</p>
+                            <p><i class="fa fa-clock text-primary me-2"></i> 24/7 during emergency</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4" style="color: black;font-size: 3.5vh;font-weight: 900;">Emergency</h4>
+                        <a href="#share" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill" >Click here </a>
+                        <p class="lh-lg mb-4"> This button connects you directly to emergency services. Press and hold for immediate assistance. Your safety is our priority.
+                        </p>
+                       
+                        </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- JS here -->
