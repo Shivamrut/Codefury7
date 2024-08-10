@@ -1,9 +1,14 @@
 .login{
     display: flex;
-    margin: 40vh;
+    margin: 30vh 0;
     align-items: center;
     justify-content: center;
 }
+/* @media screen and (max-width:500px) {
+  .login{
+    margin: 10vh 0;
+  }
+} */
 
 .wrapper {
     --input-focus: #089437;
