@@ -30,7 +30,7 @@
     </head>
 
     <body>
-
+        
         <div class="container-fluid nav-bar">
             <div class="container">
                 <nav class="navbar navbar-light navbar-expand-lg py-4">
@@ -42,19 +42,22 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav mx-auto">
-                            <a href="index.html" class="nav-item nav-link">Home</a>
-                            <a href="about.html" class="nav-item nav-link">Education</a>
-                            <a href="service.html" class="nav-item nav-link">Resources</a>
-                            <a href="event.html" class="nav-item nav-link">Donation</a>
-                            <a href="testimonial.html" class="nav-item nav-link">Testimonials</a>
-                            <a href="testimonial.html" class="nav-item nav-link">Login/Signup</a>
+                            <a href="../index.html" class="nav-item nav-link">Home</a>
+                            <a href="../education/education.html" class="nav-item nav-link">Education</a>
+                            <a href="../resources/resources.html" class="nav-item nav-link">Resources</a>
+                            <a href="../donation/donation.html" class="nav-item nav-link">Donation</a>
+                            <a href="../testimonials/testimonials.html" class="nav-item nav-link">Testimonials</a>
+                            <a href="../login.html" class="nav-item nav-link">Login</a>
                            
                             </div>
                             
                         </div>
                         
-                        <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill " style="background-color: rgb(171, 238, 173);">Emergency</a>
-                    </div>
+                        <a id="share" href="./emergency/communication.html" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill " style="background-color: #75d178;" >Emergency</a>
+                        <pre id="result"></pre>
+                        <script type="module" src="./emergency/emergency.js"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+                        </div>
                 </nav>
             </div>
         
@@ -292,7 +295,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
                             <h4 class="mb-4">Emergency</h4>
-                            <a href="" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill" style="background-color: rgb(171, 238, 173);">Click here </a>
+                            <a href="#share" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill" style="background-color: rgb(171, 238, 173);">Click here </a>
                             <p class="lh-lg mb-4"> This button connects you directly to emergency services. Press and hold for immediate assistance. Your safety is our priority.
                             </p>
                            
@@ -302,13 +305,6 @@
             </div>
         </div>
         <!-- Footer End -->
-
-
-     
-
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
         
      <!-- JavaScript Libraries -->
