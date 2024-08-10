@@ -20,7 +20,7 @@ const findMyCoordinates = () => {
     navigator.geolocation.getCurrentPosition(
       (position) => {
         console.log(position.coords.latitude, position.coords.longitude);
-        alert("Location fetched:" + position.coords.latitude+"and"+ position.coords.longitude);
+        alert("Location fetched:" + position.coords.latitude+" and "+ position.coords.longitude);
         alert("Updated to database!")
         saveLocation(position.coords);
       },
