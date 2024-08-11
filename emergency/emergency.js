@@ -57,3 +57,4 @@ const saveLocation = (coords) => {
 };
 
 document.querySelector("#share").addEventListener("click", findMyCoordinates);
+

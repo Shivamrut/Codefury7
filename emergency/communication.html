@@ -26,6 +26,11 @@
     <!-- Template Stylesheet -->
     <link href="css/testimonial.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/content.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+    <script type="text/javascript" src="./email.js"></script>
 </head>
 
 <body>
@@ -74,7 +79,7 @@
             <div class="col-lg-8">
                 <div class="card p-4 ">
                     <h4 class="text-center mb-4">Request Assistance</h4>
-                    <form>
+                    <!-- <form >
                         <div class="mb-3">
                             <label for="helpType" class="form-label">Type of Assistance Needed</label>
                             <select id="helpType" class="form-select">
@@ -93,7 +98,31 @@
                         <div class="text-center">
                             <button type="submit" class="btn btn-primary">Submit Request</button>
                         </div>
-                    </form>
+                    </form> -->
+                    <form id="contactForm">
+                        <div class="mb-3">
+                          <label for="helpType" class="form-label">Type of Assistance Needed</label>
+                          <select id="helpType" class="form-select" name="helpType">
+                            <option value="medical">Medical Assistance</option>
+                            <option value="rescue">Rescue</option>
+                            <option value="shelter">Shelter</option>
+                            <option value="food">Food and Water</option>
+                            <option value="other">Other</option>
+                          </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                          <label for="description" class="form-label">Description of Your Situation</label>
+                          <textarea id="description" class="form-control" rows="4" name="description"
+                            placeholder="Provide any important details..."></textarea>
+                        </div>
+                        
+                        <div class="text-center">
+                          <button  type="submit" class="btn btn-primary">Submit Request</button>
+                          <button type="reset" class="btn btn-secondary">Reset</button>
+                        </div>
+                      </form>
+                      
                 </div>
             </div>
         </div>
@@ -192,6 +221,7 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+   
 </body>
 
 </html>
