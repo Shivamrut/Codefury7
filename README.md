@@ -4,6 +4,30 @@
 
 In response to the increasing frequency and intensity of natural disasters—such as hurricanes, earthquakes, floods, and wildfires—this project aims to provide a comprehensive solution for disaster preparedness and response. The website addresses critical challenges such as limited access to reliable information, insufficient education on disaster response, and fragmented communication channels. By leveraging real-time data, educational resources, and emergency assistance tools, this platform empowers users to be better prepared for and more effectively respond to natural disasters.
 
+## Bonus Features Included
+1. User Authentication with firebase
+2. Gelocation API and storing the same
+3. SEO optimisation
+
+
+## UI 
+![image](https://github.com/user-attachments/assets/35f8886b-257f-4bc1-93b3-03624055a2fc)
+<br/>
+![image](https://github.com/user-attachments/assets/f987b923-b7d3-4356-835f-3fa6015e0a7a)
+<br/>
+![image](https://github.com/user-attachments/assets/8ab8eb8b-558f-48f1-8cc0-4ced9030a91c)
+<br/>
+![image](https://github.com/user-attachments/assets/9705e03f-0b06-44c2-9244-79aa6b3c3df8)
+
+<br/>
+and many more 
+
+
+## To be considered 
+1. Make sure the href is as "../component/component.html" or "component/component.html" , whichever is compatible to your device
+2. Make sure you give permission for location and notifications access on clicking on emergency.
+
+
 ## Features
 
 ### 1. Home Page
