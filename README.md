@@ -104,7 +104,10 @@ and many more
 - **Firebase**:
   - **Authentication**: Secure user login and sign-up processes.
   - **Real-Time Database**: Storing user data, emergency requests, and geolocation information.
-  - **Hosting**: Deployment and hosting of the website.
+- **Hosting**: Deployment and hosting of the website.
+- **EmailJS**:
+  - **Emergency details** : Fetching emergency details
+- **Gelocation API**: for emergency location
 
 ## Installation & Setup
 
